@@ -1,0 +1,261 @@
+@use "colors" as c;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: c.$db;
+  color: c.$df;
+  font-family: Roboto, "sans-serif";
+}
+
+.container {
+  margin: 2rem 3rem;
+}
+
+header {
+  // display: flex;
+  // justify-content: flex-start;
+  // align-items: center;
+  position: relative;
+
+  * {
+    cursor: pointer;
+    // padding-bottom: 0.4rem;
+  }
+
+  .logo {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-right: 1rem;
+    padding: 0.5rem;
+
+    &:hover {
+      background-color: c.$wb;
+      color: c.$wf;
+      // padding: 0.5rem;
+    }
+
+    // border-bottom: 1px solid white;
+  }
+
+  a {
+    @for $i from 2 through 4 {
+      &:nth-child(#{$i}) {
+        margin-right: 1rem;
+
+        &:hover {
+          padding-bottom: 0.4rem;
+          border-bottom: 1px solid c.$df;
+        }
+      }
+    }
+  }
+
+  .resume {
+    padding: 0.5rem;
+    border: 1px solid c.$df;
+  }
+
+  .light-dark-toggle {
+    position: absolute;
+    right: 0;
+    top: -0.5rem;
+    padding: 0.5rem;
+    i {
+      padding-right: 0.5rem;
+    }
+
+    &:hover {
+      border: 1px solid c.$df;
+      top: calc(-0.5rem - 1px);
+      right: -1px;
+    }
+  }
+}
+
+// <navigation bar
+
+// >hero section
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  .picture {
+    svg {
+      width: 300px;
+    }
+  }
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  position: relative;
+  margin-bottom: 2rem;
+  &::after {
+    content: "";
+    width: 5%;
+    height: 1px;
+    background-color: c.$df;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+  }
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+
+  p {
+    margin: 2rem;
+  }
+  .technologies {
+    // margin-top: 2rem;
+
+    h3 {
+      margin-bottom: 1rem;
+    }
+
+    > * {
+      display: flex;
+      justify-content: space-evenly;
+    }
+  }
+
+  .video {
+    margin: 0 auto;
+    position: relative;
+    margin-bottom: 2rem;
+  }
+}
+
+// .project {
+//   .projects-separator-left {
+//     // position: relative;
+//     display: flex;
+//     align-items: center;
+
+//     h2 {
+//       font-size: 1.2rem;
+//     }
+
+//     .line {
+//       content: "";
+//       width: 30%;
+//       height: 1px;
+//       position: relative;
+//       left: 10px;
+//       background-color: c.$df;
+//       opacity: 0.3;
+//     }
+//   }
+
+//   .projects-separator-right {
+//     // background-color: red;
+//     display: flex;
+//     justify-content: flex-end;
+//     align-items: center;
+
+//     h2 {
+//       font-size: 1.2rem;
+//     }
+
+//     .line {
+//       content: "";
+//       width: 30%;
+//       height: 1px;
+//       position: relative;
+//       right: 10px;
+//       background-color: c.$df;
+//       opacity: 0.3;
+//     }
+//   }
+
+//   .projects-description {
+//     display: flex;
+//     justify-content: space-between;
+
+//     .image,
+//     .description {
+//       margin: 1rem;
+//     }
+
+//     .description {
+//       p {
+//         margin-bottom: 1rem;
+//       }
+
+//       ul {
+//         padding: 1rem;
+//       }
+//     }
+//   }
+// }
+
+// .contact {
+//   padding-bottom: 100px;
+
+//   .contact-description {
+//     display: flex;
+//     justify-content: center;
+//     align-items: flex-start;
+//   }
+
+//   .map {
+//     // flex-grow: 1;
+//   }
+
+//   .right {
+//     // flex-grow: 2;
+//     // width: 80%;
+//     margin: 0 2rem;
+
+//     p {
+//       margin-bottom: 1rem;
+//     }
+//   }
+
+//   .contact-links {
+//     // display: flex;
+//     // justify-content: center;
+//     // align-items: center;
+//     padding: 1rem;
+
+//     li {
+//       margin-bottom: 0.5rem;
+//     }
+//     a {
+//       text-decoration: none;
+//       font-weight: bold;
+//       color: c.$df;
+//     }
+//     // .separator {
+//     //   content: "";
+//     //   width: 1px;
+//     //   height: 10px;
+//     //   background-color: c.$df;
+//     // }
+//   }
+// }

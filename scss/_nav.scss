@@ -1,0 +1,63 @@
+@use "colors" as c;
+@use "mixins" as mixins;
+
+nav {
+  position: relative;
+  @include mixins.margin-section;
+  // background-color: red;
+
+  * {
+    cursor: pointer;
+  }
+
+  .logo {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-right: 1rem;
+    padding: 0.5rem;
+
+    &:hover {
+      background-color: c.$df;
+      color: c.$db;
+    }
+  }
+
+  a {
+    @for $i from 2 through 4 {
+      &:nth-child(#{$i}) {
+        margin-right: 1rem;
+
+        &:hover {
+          padding-bottom: 0.4rem;
+          border-bottom: 1px solid c.$df;
+        }
+      }
+    }
+  }
+
+  .resume {
+    padding: 0.5rem;
+    border: 1px solid c.$df;
+
+    &:hover {
+      background-color: c.$df;
+      color: c.$db;
+    }
+  }
+
+  .light-dark-toggle {
+    position: absolute;
+    right: 0;
+    top: -0.5rem;
+    padding: 0.5rem;
+    i {
+      padding-right: 0.5rem;
+    }
+
+    &:hover {
+      border: 1px solid c.$df;
+      top: calc(-0.5rem - 1px);
+      right: -1px;
+    }
+  }
+}

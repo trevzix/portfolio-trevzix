@@ -1,0 +1,77 @@
+@use "colors" as c;
+@use "mixins" as mixins;
+
+.project {
+  @include mixins.margin-section;
+
+  .projects-separator-left {
+    // position: relative;
+    display: flex;
+    align-items: center;
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    .line {
+      content: "";
+      width: 30%;
+      height: 1px;
+      position: relative;
+      left: 10px;
+      background-color: c.$df;
+      opacity: 0.3;
+    }
+  }
+
+  .projects-separator-right {
+    // background-color: red;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    h2 {
+      font-size: 1.2rem;
+    }
+
+    .line {
+      content: "";
+      width: 30%;
+      height: 1px;
+      position: relative;
+      right: 10px;
+      background-color: c.$df;
+      opacity: 0.3;
+    }
+  }
+
+  .projects-description {
+    display: flex;
+    justify-content: space-between;
+
+    .image,
+    .description {
+      margin: 1rem;
+    }
+
+    .description {
+      p {
+        margin-bottom: 1rem;
+      }
+
+      ul {
+        padding: 1rem;
+      }
+    }
+
+    .projects-links {
+      a {
+        margin-right: 0.5rem;
+        cursor: pointer;
+        &:hover {
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+}

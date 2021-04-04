@@ -1,0 +1,62 @@
+@use "colors" as c;
+
+.light-theme {
+  background-color: white;
+  color: c.$db;
+
+  .section-title {
+    &::after {
+      background-color: c.$db;
+    }
+  }
+
+  // > navbar
+  .logo {
+    &:hover {
+      background-color: c.$db;
+      // color: c.$df;
+      color: white;
+    }
+  }
+
+  a {
+    @for $i from 2 through 4 {
+      &:nth-child(#{$i}) {
+        &:hover {
+          border-bottom: 1px solid c.$db;
+        }
+      }
+    }
+  }
+
+  .resume {
+    border: 1px solid c.$db;
+
+    &:hover {
+      background-color: c.$db;
+      color: white;
+      // color: c.$df;
+    }
+  }
+
+  .light-dark-toggle {
+    &:hover {
+      border: 1px solid c.$db;
+    }
+  }
+
+  // < navbar
+
+  .project {
+    .line {
+      background-color: c.$db;
+      opacity: 0.3;
+    }
+  }
+
+  .contact {
+    a {
+      color: c.$db;
+    }
+  }
+}

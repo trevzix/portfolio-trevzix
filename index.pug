@@ -1,0 +1,185 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    
+    //- Font Awesome
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css")
+
+    //- Roboto Font
+    link(href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet")
+
+
+    //- Animate.css
+    
+    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css")
+
+    link(rel="stylesheet", href="css/style.css")
+    title Test
+  body
+    script(src="script.js" defer)
+    
+    .email-test
+      .line
+      a(href="mailto:trevzix@gmail.com") trevzix@gmail.com
+
+    a.scroll-top(href="#")
+          <i class="fas fa-long-arrow-alt-up"></i>
+
+    .container
+      nav
+        a.logo.links trevzix
+        a.links About
+        a.links Projects
+        a.links Contact
+        a.resume Resume
+        a.light-dark-toggle 
+          i.fas.fa-sun
+          | Too dark?
+      main.hero
+        .hi
+          h1  Hi,
+            br
+            | I'm 
+            span Trevor,
+            br
+            | Web developer.
+        .picture
+          //- img(src='https://dummyimage.com/300x300.png' alt='')
+          //- img(src="images/blob.svg", alt="", srcset="")
+          svg(viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg")
+            path(fill="#c4c4c4" d="M44,-76.2C57.5,-68.4,69.1,-57.5,78.1,-44.3C87.1,-31.1,93.5,-15.5,94.2,0.4C94.9,16.4,90,32.7,81.4,46.6C72.7,60.5,60.5,72,46.3,79.5C32.1,87,16.1,90.6,0.7,89.4C-14.6,88.1,-29.3,82.1,-42.8,74.3C-56.4,66.4,-68.8,56.6,-76.7,43.9C-84.7,31.3,-88.1,15.6,-87.2,0.5C-86.4,-14.6,-81.2,-29.3,-74.1,-43.4C-67,-57.5,-57.9,-71.1,-45.3,-79.3C-32.6,-87.6,-16.3,-90.5,-0.5,-89.6C15.3,-88.7,30.5,-84,44,-76.2Z" transform="translate(100 100)")
+      section.about#about
+        h1.section-title About
+
+        p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque dicta odit non optio voluptates voluptate veniam quae nulla quibusdam minus.
+
+
+        .video
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/PkZNo7MFNFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+        .technologies
+
+            .titles
+              h3 Familiar with: 
+              h3 Strongly interested in learning:
+
+            .lists
+              ul.familiar
+                li HTML/PUG
+                li CSS/SASS
+                li Javascript
+                li AWS
+                li Docker
+                li Linux CLI
+
+            
+              ul.learning 
+                li React/React Native
+                li Databases (MongoDB, SQL...)
+                li Serverless (Firebase, Azure...)
+
+        p Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio reprehenderit necessitatibus quis voluptatibus dolores. Vel nemo illum, dolores reprehenderit amet alias, voluptate sapiente velit, nihil enim id? Corporis, soluta sunt!
+      
+      section.projects#projects
+        h1.section-title Projects
+
+        .project
+          .projects-separator-left
+            h2  NMPG - No Mouse Password Generator
+            .line
+            //- hr
+          .projects-description 
+            .image
+              <img src='https://dummyimage.com/400x300.gif' alt=''/>
+            .description
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, aliquam architecto a dolore optio omnis est quaerat assumenda culpa blanditiis aspernatur hic aut qui maiores dolorum corporis illum mollitia excepturi.
+              ul
+                li Lorem ipsum dolor sit amet.
+                li Lorem ipsum dolor sit amet.
+                li Lorem ipsum dolor sit amet.
+                li Lorem ipsum dolor sit amet.
+              .projects-links
+                a
+                  <i class="fas fa-external-link-alt"></i>
+                a
+                  <i class="fab fa-github"></i> 
+
+
+
+        .project
+          .projects-separator-right
+            .line
+            h2  Street Fighter 2 Character Selection
+            
+          .projects-description 
+
+            .description
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, aliquam architecto a dolore optio omnis est quaerat assumenda culpa blanditiis aspernatur hic aut qui maiores dolorum corporis illum mollitia excepturi.
+              ul
+                li Lorem ipsum dolor sit amet.
+                li Lorem ipsum dolor sit amet.
+                li Lorem ipsum dolor sit amet.
+                li Lorem ipsum dolor sit amet.
+              .projects-links
+                a
+                  <i class="fas fa-external-link-alt"></i>
+                a
+                  <i class="fab fa-github"></i> 
+            .image
+              <img src='https://dummyimage.com/400x300.gif' alt=''/>
+
+        .project
+          .projects-separator-left
+            h2  Super Customisable Weather app
+            .line
+            //- hr
+          .projects-description 
+            .image
+              <img src='https://dummyimage.com/400x300.gif' alt=''/>
+            .description
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, aliquam architecto a dolore optio omnis est quaerat assumenda culpa blanditiis aspernatur hic aut qui maiores dolorum corporis illum mollitia excepturi.
+              ul
+                li Lorem ipsum dolor sit amet.
+                li Lorem ipsum dolor sit amet.
+                li Lorem ipsum dolor sit amet.
+                li Lorem ipsum dolor sit amet.
+              .projects-links
+                a
+                  <i class="fas fa-external-link-alt"></i>
+                a
+                  <i class="fab fa-github"></i>                 
+
+      section.contact#contact
+
+          h1.section-title Contact
+
+          .contact-description
+
+            .map 
+              //- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d547333.2797704533!2d-117.34268182876207!3d34.26695189754277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db53c64196b143%3A0x75d9e9ca3bdbba67!2sRedlands%2C%20CA!5e0!3m2!1sen!2sus!4v1617402392082!5m2!1sen!2sus" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+              
+
+            .right
+
+              p Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores non quaerat perferendis officiis suscipit quidem nemo velit laudantium neque incidunt.
+          
+              ul.contact-links
+                li 
+                  a(href="mailto:trevzix@gmail.com") Email: trevzix@gmail.com
+                
+                li Phone: +1 (661) 494-4642
+                
+                li LinkedIn: trevnichols
+             
+              
+
+          
+
+        
+
+
+          
