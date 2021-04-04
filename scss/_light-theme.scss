@@ -3,6 +3,7 @@
 .light-theme {
   background-color: white;
   color: c.$db;
+  transition: background-color 0.5s ease-in-out;
 
   .section-title {
     &::after {
@@ -58,5 +59,14 @@
     a {
       color: c.$db;
     }
+  }
+
+  .email-test {
+    a {
+      color: c.$db;
+    }
+  }
+  .scroll-top {
+    color: c.$db;
   }
 }

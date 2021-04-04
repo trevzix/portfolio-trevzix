@@ -76,6 +76,7 @@ body {
 }
 .email-test:hover {
   opacity: 1;
+  text-decoration: none;
 }
 .email-test a {
   color: #c4c4c4;
@@ -279,6 +280,7 @@ nav .light-dark-toggle:hover {
 .light-theme {
   background-color: white;
   color: #1a1a1a;
+  transition: background-color 0.5s ease-in-out;
 }
 .light-theme .section-title::after {
   background-color: #1a1a1a;
@@ -311,6 +313,12 @@ nav .light-dark-toggle:hover {
   opacity: 0.3;
 }
 .light-theme .contact a {
+  color: #1a1a1a;
+}
+.light-theme .email-test a {
+  color: #1a1a1a;
+}
+.light-theme .scroll-top {
   color: #1a1a1a;
 }
 
