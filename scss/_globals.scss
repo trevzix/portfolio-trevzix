@@ -22,9 +22,10 @@ html {
 }
 
 body {
-  background-color: c.$db;
-  color: c.$df;
+  background-color: c.$dark;
+  color: c.$light;
   font-family: Roboto, "sans-serif";
+  position: relative;
 }
 
 .container {
@@ -41,7 +42,7 @@ body {
     content: "";
     width: 5%;
     height: 1px;
-    background-color: c.$df;
+    background-color: c.$light;
     bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
@@ -55,9 +56,9 @@ body {
   bottom: 20px;
   right: 20px;
   // padding: 1rem 1.3rem;
-  // background-color: c.$df;
-  // color: c.$db;
-  color: c.$df;
+  // background-color: c.$light;
+  // color: c.$dark;
+  color: c.$light;
   cursor: pointer;
   border-radius: 50%;
   font-size: 1.5rem;
@@ -86,7 +87,7 @@ body {
   }
 
   a {
-    color: c.$df;
+    color: c.$light;
     text-decoration: none;
     letter-spacing: 5px;
     padding: 0;
@@ -100,6 +101,6 @@ body {
     position: relative;
     left: 0;
     margin-right: 1rem;
-    background-color: c.$df;
+    background-color: c.$light;
   }
 }

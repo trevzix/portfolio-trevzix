@@ -17,8 +17,8 @@ nav {
     padding: 0.5rem;
 
     &:hover {
-      background-color: c.$df;
-      color: c.$db;
+      background-color: c.$light;
+      color: c.$dark;
     }
   }
 
@@ -29,7 +29,7 @@ nav {
 
         &:hover {
           padding-bottom: 0.4rem;
-          border-bottom: 1px solid c.$df;
+          border-bottom: 1px solid c.$light;
         }
       }
     }
@@ -37,11 +37,13 @@ nav {
 
   .resume {
     padding: 0.5rem;
-    border: 1px solid c.$df;
+    border: 1px solid c.$light;
+    text-decoration: none;
+    color: c.$light;
 
     &:hover {
-      background-color: c.$df;
-      color: c.$db;
+      background-color: c.$light;
+      color: c.$dark;
     }
   }
 
@@ -55,7 +57,7 @@ nav {
     }
 
     &:hover {
-      border: 1px solid c.$df;
+      border: 1px solid c.$light;
       top: calc(-0.5rem - 1px);
       right: -1px;
     }

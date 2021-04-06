@@ -23,6 +23,7 @@ body {
   background-color: #1a1a1a;
   color: #c4c4c4;
   font-family: Roboto, "sans-serif";
+  position: relative;
 }
 
 .container {
@@ -136,6 +137,8 @@ nav a:nth-child(4):hover {
 nav .resume {
   padding: 0.5rem;
   border: 1px solid #c4c4c4;
+  text-decoration: none;
+  color: #c4c4c4;
 }
 nav .resume:hover {
   background-color: #c4c4c4;
@@ -320,6 +323,38 @@ nav .light-dark-toggle:hover {
 }
 .light-theme .scroll-top {
   color: #1a1a1a;
+}
+
+.modal {
+  position: absolute;
+  background-color: #1a1a1a;
+  top: 10%;
+  margin: 5rem;
+  border: 1px solid #c4c4c4;
+  padding: 2rem;
+}
+.modal i {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  font-size: 1.5rem;
+}
+.modal .hey {
+  background-color: #c4c4c4;
+  color: #1a1a1a;
+  margin: 1rem 5rem 2rem 5rem;
+  padding: 1rem;
+  font-style: italic;
+  opacity: 0.8;
+  text-align: center;
+}
+.modal .message p {
+  margin-bottom: 1rem;
+}
+.modal .message .message-video {
+  margin: 3rem 0;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

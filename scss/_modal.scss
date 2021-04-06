@@ -1,0 +1,42 @@
+@use "colors" as c;
+
+.modal {
+  position: absolute;
+  background-color: c.$dark;
+  top: 10%;
+  margin: 5rem;
+  border: 1px solid c.$light;
+  padding: 2rem;
+  // display: flex;
+  // flex-direction: column;
+  i {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  .hey {
+    // margin-top: 1rem;
+    background-color: c.$light;
+    color: c.$dark;
+    // display: inline;
+    // margin: 0 auto;
+    margin: 1rem 5rem 2rem 5rem;
+    padding: 1rem;
+    font-style: italic;
+    opacity: 0.8;
+    text-align: center;
+  }
+
+  .message {
+    // margin-top: 2rem;
+    p {
+      margin-bottom: 1rem;
+    }
+    .message-video {
+      margin: 3rem 0;
+      text-align: center;
+    }
+  }
+}

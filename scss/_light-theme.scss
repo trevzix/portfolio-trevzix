@@ -2,20 +2,20 @@
 
 .light-theme {
   background-color: white;
-  color: c.$db;
+  color: c.$dark;
   transition: background-color 0.5s ease-in-out;
 
   .section-title {
     &::after {
-      background-color: c.$db;
+      background-color: c.$dark;
     }
   }
 
   // > navbar
   .logo {
     &:hover {
-      background-color: c.$db;
-      // color: c.$df;
+      background-color: c.$dark;
+      // color: c.$light;
       color: white;
     }
   }
@@ -24,25 +24,25 @@
     @for $i from 2 through 4 {
       &:nth-child(#{$i}) {
         &:hover {
-          border-bottom: 1px solid c.$db;
+          border-bottom: 1px solid c.$dark;
         }
       }
     }
   }
 
   .resume {
-    border: 1px solid c.$db;
+    border: 1px solid c.$dark;
 
     &:hover {
-      background-color: c.$db;
+      background-color: c.$dark;
       color: white;
-      // color: c.$df;
+      // color: c.$light;
     }
   }
 
   .light-dark-toggle {
     &:hover {
-      border: 1px solid c.$db;
+      border: 1px solid c.$dark;
     }
   }
 
@@ -50,23 +50,23 @@
 
   .project {
     .line {
-      background-color: c.$db;
+      background-color: c.$dark;
       opacity: 0.3;
     }
   }
 
   .contact {
     a {
-      color: c.$db;
+      color: c.$dark;
     }
   }
 
   .email-test {
     a {
-      color: c.$db;
+      color: c.$dark;
     }
   }
   .scroll-top {
-    color: c.$db;
+    color: c.$dark;
   }
 }

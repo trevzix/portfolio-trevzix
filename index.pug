@@ -12,10 +12,6 @@ html(lang="en")
     link(href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet")
 
 
-    //- Animate.css
-    
-    link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css")
-
     link(rel="stylesheet", href="css/style.css")
     title Test
   body
@@ -27,7 +23,8 @@ html(lang="en")
         a.links About
         a.links Projects
         a.links Contact
-        a.resume Resume
+        a.resume(href="#") Resume
+        //- a.modal-link How to make a friend for life
         a.light-dark-toggle 
           i.fas.fa-sun
           | Too dark?
@@ -49,7 +46,6 @@ html(lang="en")
 
         p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque dicta odit non optio voluptates voluptate veniam quae nulla quibusdam minus.
 
-
         .video
           <iframe width="560" height="315" src="https://www.youtube.com/embed/PkZNo7MFNFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -65,6 +61,7 @@ html(lang="en")
                 li HTML/PUG
                 li CSS/SASS
                 li Javascript
+                li Git
                 li AWS
                 li Docker
                 li Linux CLI
@@ -168,12 +165,34 @@ html(lang="en")
                 
                 li LinkedIn: trevnichols
 
+
     .email-test
       .line
       a(href="mailto:trevzix@gmail.com") trevzix@gmail.com
 
     a.scroll-top(href="#")
       <i class="fas fa-long-arrow-alt-up"></i>
+
+    .modal
+        <i class="fas fa-times"></i>
+        .hey
+          p Hey, I was not expecting you to click on that link! Thank you for being curious
+
+        .message
+          p Like most people who likes computers and technology, I have no friends :)
+          p I can figure out things on my own, i've doing it for my whole life, but would be nice to find someone more knowledgeble that can provide me guidance
+
+          p If you're that person and you're feeling charitable today, then you just gained a friend for life ;)
+
+         
+          .message-video
+            p I prepared a little video for you:
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/PkZNo7MFNFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+          //- p Send me a message: trevzix@gmail.com, I will certain get back to you 
+
+
+    
              
               
 
