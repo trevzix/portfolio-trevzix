@@ -66,3 +66,17 @@ scrollTop.addEventListener("click", () => {
 
 // better tutorial
 // https://www.youtube.com/watch?v=uzRsENVD3W8
+
+// modal popup
+const modalLink = document.getElementById("modal-link");
+
+const modalArea = document.querySelector(".modal");
+const modalClose = document.querySelector(".fa-times");
+
+modalLink.addEventListener("click", () => {
+  modalArea.classList.add("modal-show");
+});
+
+modalClose.addEventListener("click", () => {
+  modalArea.classList.remove("modal-show");
+});

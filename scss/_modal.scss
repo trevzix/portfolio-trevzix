@@ -7,6 +7,7 @@
   margin: 5rem;
   border: 1px solid c.$light;
   padding: 2rem;
+  display: none;
   // display: flex;
   // flex-direction: column;
   i {
@@ -39,4 +40,8 @@
       text-align: center;
     }
   }
+}
+
+.modal-show {
+  display: block;
 }

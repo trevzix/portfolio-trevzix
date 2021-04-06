@@ -19,15 +19,18 @@ html(lang="en")
 
     .container
       nav
-        a.logo.links trevzix
-        a.links About
-        a.links Projects
-        a.links Contact
-        a.resume(href="#") Resume
-        //- a.modal-link How to make a friend for life
-        a.light-dark-toggle 
-          i.fas.fa-sun
-          | Too dark?
+        .links
+          .links-left
+            a.logo.link trevzix
+            a.link About
+            a.link Projects
+            a.link Contact
+            a.resume(href="#") Resume
+          .links-right 
+            a.link#modal-link How to make a friend for life
+            a.light-dark-toggle 
+              i.fas.fa-sun
+              | Too dark?
       main.hero
         .hi
           h1  Hi,

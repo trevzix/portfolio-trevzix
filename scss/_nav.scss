@@ -2,12 +2,49 @@
 @use "mixins" as mixins;
 
 nav {
-  position: relative;
   @include mixins.margin-section;
   // background-color: red;
+  .links {
+    display: flex;
+    justify-content: space-between;
 
-  * {
-    cursor: pointer;
+    .links-right,
+    .links-left {
+      display: flex;
+      align-items: center;
+      * {
+        cursor: pointer;
+      }
+    }
+
+    .links-left {
+      a {
+        @for $i from 2 through 4 {
+          &:nth-child(#{$i}) {
+            margin-right: 1rem;
+
+            &:hover {
+              padding-bottom: 0.4rem;
+              border-bottom: 1px solid c.$light;
+            }
+          }
+        }
+      }
+    }
+
+    .links-right {
+      a {
+        &:not(:last-child) {
+          margin-right: 2rem;
+          font-style: italic;
+          opacity: 0.6;
+          &:hover {
+            padding-bottom: 0.4rem;
+            border-bottom: 1px solid c.$light;
+          }
+        }
+      }
+    }
   }
 
   .logo {
@@ -19,19 +56,6 @@ nav {
     &:hover {
       background-color: c.$light;
       color: c.$dark;
-    }
-  }
-
-  a {
-    @for $i from 2 through 4 {
-      &:nth-child(#{$i}) {
-        margin-right: 1rem;
-
-        &:hover {
-          padding-bottom: 0.4rem;
-          border-bottom: 1px solid c.$light;
-        }
-      }
     }
   }
 
@@ -48,9 +72,6 @@ nav {
   }
 
   .light-dark-toggle {
-    position: absolute;
-    right: 0;
-    top: -0.5rem;
     padding: 0.5rem;
     i {
       padding-right: 0.5rem;
@@ -58,8 +79,8 @@ nav {
 
     &:hover {
       border: 1px solid c.$light;
-      top: calc(-0.5rem - 1px);
-      right: -1px;
+      // top: calc(-0.5rem - 1px);
+      // right: -1px;
     }
   }
 }
