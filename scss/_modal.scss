@@ -23,10 +23,10 @@
     color: c.$dark;
     // display: inline;
     // margin: 0 auto;
-    margin: 1rem 5rem 2rem 5rem;
-    padding: 1rem;
+    margin: 1rem 7rem 2rem 7rem;
+    padding: 0.5rem;
     font-style: italic;
-    opacity: 0.8;
+    opacity: 0.5;
     text-align: center;
   }
 
@@ -38,6 +38,13 @@
     .message-video {
       margin: 3rem 0;
       text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+      color: c.$light;
+      font-size: 1.5rem;
+      font-weight: 600;
     }
   }
 }

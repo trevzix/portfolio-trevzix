@@ -96,6 +96,12 @@ body {
   background-color: #c4c4c4;
 }
 
+.bottomm {
+  margin: 0 auto;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
 nav {
   margin-bottom: 5rem;
 }
@@ -267,9 +273,6 @@ nav .light-dark-toggle:hover {
   opacity: 0.5;
 }
 
-.contact {
-  padding-bottom: 100px;
-}
 .contact .contact-description {
   display: flex;
   justify-content: center;
@@ -357,10 +360,10 @@ nav .light-dark-toggle:hover {
 .modal .hey {
   background-color: #c4c4c4;
   color: #1a1a1a;
-  margin: 1rem 5rem 2rem 5rem;
-  padding: 1rem;
+  margin: 1rem 7rem 2rem 7rem;
+  padding: 0.5rem;
   font-style: italic;
-  opacity: 0.8;
+  opacity: 0.5;
   text-align: center;
 }
 .modal .message p {
@@ -369,6 +372,12 @@ nav .light-dark-toggle:hover {
 .modal .message .message-video {
   margin: 3rem 0;
   text-align: center;
+}
+.modal .message a {
+  text-decoration: none;
+  color: #c4c4c4;
+  font-size: 1.5rem;
+  font-weight: 600;
 }
 
 .modal-show {
