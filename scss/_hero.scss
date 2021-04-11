@@ -4,10 +4,23 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-direction: column;
+
   @include mixins.margin-section;
+  @include mixins.mq(800px) {
+    flex-direction: row-reverse;
+  }
 
   h1 {
     font-size: 3.5rem;
+  }
+
+  .hi {
+    h1 {
+      font-size: 3rem;
+    }
+    // text-align: center;
+    margin-bottom: 1rem;
   }
 
   .picture {

@@ -1,0 +1,87 @@
+@use "colors" as c;
+@use "mixins" as mixins;
+
+nav {
+  @include mixins.margin-section;
+  // background-color: red;
+  .links {
+    display: flex;
+    justify-content: space-between;
+
+    .links-right,
+    .links-left {
+      display: flex;
+      align-items: center;
+      * {
+        cursor: pointer;
+      }
+    }
+
+    .links-left {
+      display: none;
+      a {
+        @for $i from 2 through 4 {
+          &:nth-child(#{$i}) {
+            margin-right: 1rem;
+
+            &:hover {
+              padding-bottom: 0.4rem;
+              border-bottom: 1px solid c.$light;
+            }
+          }
+        }
+      }
+    }
+
+    .links-right {
+      a {
+        &:not(:last-child) {
+          margin-right: 2rem;
+          font-style: italic;
+          opacity: 0.6;
+          &:hover {
+            padding-bottom: 0.4rem;
+            border-bottom: 1px solid c.$light;
+          }
+        }
+      }
+    }
+  }
+
+  .logo {
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-right: 1rem;
+    padding: 0.5rem;
+
+    &:hover {
+      background-color: c.$light;
+      color: c.$dark;
+    }
+  }
+
+  .resume {
+    padding: 0.5rem;
+    border: 1px solid c.$light;
+    text-decoration: none;
+    color: c.$light;
+
+    &:hover {
+      background-color: c.$light;
+      color: c.$dark;
+    }
+  }
+
+  .light-dark-toggle {
+    padding: 0.5rem;
+    i {
+      padding-right: 0.5rem;
+    }
+
+    &:hover {
+      border: 1px solid c.$light;
+      // top: calc(-0.5rem - 1px);
+      // right: -1px;
+    }
+  }
+}

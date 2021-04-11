@@ -1,25 +1,43 @@
 @use "colors" as c;
+@use "mixins" as mixins;
 
 .contact {
   // padding-bottom: 100px;
   margin-bottom: 5rem;
 
-  .contact-description {
+  &__contact {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
-  }
-
-  .right {
-    margin: 0 2rem;
-
-    p {
-      margin-bottom: 1rem;
+    align-items: center;
+    flex-direction: column;
+    @include mixins.mq(900px) {
+      flex-direction: row;
     }
   }
 
-  .contact-links {
+  &__info {
+    @include mixins.mq(900px) {
+      margin-left: 1rem;
+    }
+
+    p {
+      margin: 1rem 0;
+    }
+  }
+
+  &__links {
     padding: 1rem;
+    text-align: center;
+    list-style-type: none;
+    // @include mixins.mq(699px) {
+    //   display: flex;
+    //   justify-content: space-evenly;
+    //   list-style-type: none;
+    // }
+    @include mixins.mq(900px) {
+      list-style-type: disc;
+      text-align: left;
+    }
 
     li {
       margin-bottom: 0.5rem;

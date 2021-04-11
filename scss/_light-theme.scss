@@ -12,13 +12,12 @@
   }
 
   // > navbar
-  .logo {
-    &:hover {
-      background-color: c.$dark;
-      // color: c.$light;
-      color: white;
-    }
-  }
+  // .logo {
+  //   &:hover {
+  //     background-color: c.$dark;
+  //     color: white;
+  //   }
+  // }
 
   a {
     @for $i from 2 through 4 {

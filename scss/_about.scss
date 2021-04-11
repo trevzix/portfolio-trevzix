@@ -4,44 +4,51 @@
 .about {
   display: flex;
   flex-direction: column;
+  // text-align: center;
   @include mixins.margin-section;
 
-  p {
-    &:nth-child(2) {
-      margin-bottom: 2rem;
-    }
-    &:nth-child(5) {
-      margin-top: 2rem;
-    }
-  }
-
-  .technologies {
-    h3 {
+  &__description {
+    margin-bottom: 1rem;
+    p {
       margin-bottom: 1rem;
     }
-
-    > * {
-      display: flex;
-      justify-content: space-evenly;
-    }
-
-    // ul {
-    //   display: flex;
-    //   list-style-type: none;
-    //   li {
-    //     // padding: 1rem;
-    //     background-color: c.$light;
-    //     color: c.$dark;
-    //     border-radius: 10px;
-    //     margin: 0.5rem;
-    //     // background-color: blue;
-    //   }
-    // }
   }
 
-  .video {
+  &__description--bottom {
+    p {
+      &:not(:last-child) {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+
+  &__video {
     margin: 0 auto;
     position: relative;
     margin-bottom: 2rem;
+    @include mixins.mq(900px) {
+      width: 560px;
+      height: 315px;
+    }
+  }
+
+  &__technologies {
+    &--familiar,
+    &--learning {
+      margin-bottom: 1rem;
+      ul {
+        display: flex;
+        align-items: center;
+        list-style-type: none;
+        flex-wrap: wrap;
+
+        li {
+          padding: 0.3rem;
+          background-color: c.$light;
+          color: c.$dark;
+          margin: 0.2rem;
+        }
+      }
+    }
   }
 }
