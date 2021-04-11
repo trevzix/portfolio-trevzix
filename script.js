@@ -1,4 +1,12 @@
 // 1. Variables
+// 2. Light / Dark theme button toggler
+// 3. Nav links
+// 4. Scroll to top  button
+// 5. Modal popup
+
+// =====================================
+
+// 1. Variables
 
 const body = document.querySelector("body");
 const lightDarkToggle = document.querySelector(".light-dark-toggle ");
@@ -22,13 +30,13 @@ lightDarkToggle.addEventListener("click", (x) => {
   }
 });
 
+// 3. Nav links
+
 const links = document.querySelectorAll(".links");
 console.log(links);
 
 links.forEach((link) => {
   link.addEventListener("click", (x) => {
-    // const contact = document.querySelector("contact");
-
     if (link.innerHTML == "About") {
       window.location.hash = "about";
     }
@@ -41,9 +49,8 @@ links.forEach((link) => {
   });
 });
 
-//=== >Scroll to top  button ========
+// 4. Scroll to top  button
 
-//Get the button:
 scrollTop = document.querySelector(".scroll-top");
 
 // When the user scrolls down 400px from the top of the document, show the button
@@ -65,16 +72,15 @@ scrollTop.addEventListener("click", () => {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 });
 
-// check this out to toggle animations
-// https://www.youtube.com/watch?v=C_JKlr4WKKs
+// 5. Modal popup
 
-// better tutorial
-// https://www.youtube.com/watch?v=uzRsENVD3W8
-
-// modal popup
+// The link location on the navbar
 const modalLink = document.getElementById("modal-link");
 
+// The popup itself
 const modalArea = document.querySelector(".modal");
+
+// Close button inside of the popup
 const modalClose = document.querySelector(".fa-times");
 
 modalLink.addEventListener("click", () => {

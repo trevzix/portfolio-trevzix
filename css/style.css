@@ -348,11 +348,22 @@ nav .light-dark-toggle:hover {
 .light-theme a {
   color: #1a1a1a;
 }
+.light-theme .modal {
+  background-color: white;
+  border: 1px solid #1a1a1a;
+}
+.light-theme .modal .hey {
+  background-color: #1a1a1a;
+  color: #c4c4c4;
+}
+.light-theme .modal .message a {
+  color: #1a1a1a;
+}
 
 .modal {
   position: absolute;
   background-color: #1a1a1a;
-  top: 10%;
+  top: 2%;
   margin: 5rem;
   border: 1px solid #c4c4c4;
   padding: 2rem;
@@ -366,13 +377,21 @@ nav .light-dark-toggle:hover {
   font-size: 1.5rem;
 }
 .modal .hey {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background-color: #c4c4c4;
   color: #1a1a1a;
-  margin: 1rem 7rem 2rem 7rem;
+  margin-bottom: 4rem;
   padding: 0.5rem;
   font-style: italic;
   opacity: 0.5;
   text-align: center;
+}
+.modal .hey span {
+  font-style: normal;
+  opacity: 1;
 }
 .modal .message p {
   margin-bottom: 1rem;
@@ -386,6 +405,9 @@ nav .light-dark-toggle:hover {
   color: #c4c4c4;
   font-size: 1.5rem;
   font-weight: 600;
+}
+.modal .fa-times:hover {
+  transform: scale(1.099);
 }
 
 .modal-show {

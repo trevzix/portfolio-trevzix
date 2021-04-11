@@ -3,7 +3,7 @@
 .modal {
   position: absolute;
   background-color: c.$dark;
-  top: 10%;
+  top: 2%;
   margin: 5rem;
   border: 1px solid c.$light;
   padding: 2rem;
@@ -19,15 +19,23 @@
   }
   .hey {
     // margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     background-color: c.$light;
     color: c.$dark;
     // display: inline;
     // margin: 0 auto;
-    margin: 1rem 7rem 2rem 7rem;
+    margin-bottom: 4rem;
     padding: 0.5rem;
     font-style: italic;
     opacity: 0.5;
     text-align: center;
+    span {
+      font-style: normal;
+      opacity: 1;
+    }
   }
 
   .message {
@@ -45,6 +53,12 @@
       color: c.$light;
       font-size: 1.5rem;
       font-weight: 600;
+    }
+  }
+
+  .fa-times {
+    &:hover {
+      transform: scale(1.099);
     }
   }
 }

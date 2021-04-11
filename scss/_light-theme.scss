@@ -79,4 +79,21 @@
   //     color: c.$dark;
   //   }
   // }
+
+  .modal {
+    background-color: white;
+    border: 1px solid c.$dark;
+
+    .hey {
+      background-color: c.$dark;
+      // background-color: red;
+      color: c.$light;
+    }
+
+    .message {
+      a {
+        color: c.$dark;
+      }
+    }
+  }
 }
