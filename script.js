@@ -1,5 +1,9 @@
+// 1. Variables
+
 const body = document.querySelector("body");
 const lightDarkToggle = document.querySelector(".light-dark-toggle ");
+
+// 2.Light / Dark theme button toggler
 
 let light = false;
 lightDarkToggle.addEventListener("click", (x) => {

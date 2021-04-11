@@ -55,7 +55,7 @@ body {
   color: #c4c4c4;
   cursor: pointer;
   border-radius: 50%;
-  font-size: 1.5rem;
+  font-size: 2rem;
   z-index: 99;
   opacity: 0.5;
 }
@@ -96,10 +96,15 @@ body {
   background-color: #c4c4c4;
 }
 
-.bottomm {
+.bottom {
   margin: 0 auto;
-  padding-bottom: 30px;
+  padding-bottom: 2rem;
   text-align: center;
+}
+.bottom a {
+  text-decoration: none;
+  color: #c4c4c4;
+  font-weight: bold;
 }
 
 nav {
@@ -273,6 +278,9 @@ nav .light-dark-toggle:hover {
   opacity: 0.5;
 }
 
+.contact {
+  margin-bottom: 5rem;
+}
 .contact .contact-description {
   display: flex;
   justify-content: center;
@@ -334,10 +342,10 @@ nav .light-dark-toggle:hover {
 .light-theme .contact a {
   color: #1a1a1a;
 }
-.light-theme .email-test a {
+.light-theme .scroll-top {
   color: #1a1a1a;
 }
-.light-theme .scroll-top {
+.light-theme a {
   color: #1a1a1a;
 }
 

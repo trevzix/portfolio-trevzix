@@ -61,12 +61,22 @@
     }
   }
 
-  .email-test {
-    a {
-      color: c.$dark;
-    }
-  }
+  // .email-test {
+  //   a {
+  //     color: c.$dark;
+  //   }
+  // }
   .scroll-top {
     color: c.$dark;
   }
+
+  a {
+    color: c.$dark;
+  }
+
+  // .bottom {
+  //   a {
+  //     color: c.$dark;
+  //   }
+  // }
 }
