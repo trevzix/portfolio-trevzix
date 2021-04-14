@@ -32,7 +32,11 @@ body {
 .container {
   margin: 1rem;
   @include mixins.mq(900px) {
-    margin: 1rem 2rem;
+    margin: 1rem 3rem;
+  }
+  @include mixins.mq(1080px) {
+    width: 1000px;
+    margin: 1rem auto;
   }
 }
 
@@ -125,5 +129,9 @@ body {
 }
 
 .show {
-  display: block;
+  display: flex !important;
+}
+
+a {
+  color: c.$light;
 }

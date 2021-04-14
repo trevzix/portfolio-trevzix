@@ -1,19 +1,23 @@
 section.about#about
   h1.section-title About
 
-  p Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque dicta odit non optio voluptates voluptate veniam quae nulla quibusdam minus.
+  .about__description
+    p I’m a developer currently living in southern California. 
 
-  .video
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/PkZNo7MFNFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    p My curiosity and desire to express my creativity has led me to pursue programming, having the power to build tools to automate/improve my life has proven to be satisfying. 
 
-  .technologies
+    p I want to understand how big projects are done and how teams of developers work together to build complex applications.
 
-      .titles
+    p I prepared a quick video specially for you:
+
+  .about__video
+    <iframe class="about__video" width="373" height="210" src="https://www.youtube.com/embed/PkZNo7MFNFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+  .about__technologies
+
+      .about__technologies--familiar
         h3 Familiar with: 
-        h3 Strongly interested in learning:
-
-      .lists
-        ul.familiar
+        ul
           li HTML/PUG
           li CSS/SASS
           li Javascript
@@ -21,11 +25,15 @@ section.about#about
           li AWS
           li Docker
           li Linux CLI
-
-      
-        ul.learning 
-          li React/React Native
-          li Databases (MongoDB, SQL...)
+      .about__technologies--familiar 
+        h3 Strongly interested in learning:
+        ul
+          li React
+          li React Native
+          li Databases
           li Serverless (Firebase, Azure...)
 
-  p Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio reprehenderit necessitatibus quis voluptatibus dolores. Vel nemo illum, dolores reprehenderit amet alias, voluptate sapiente velit, nihil enim id? Corporis, soluta sunt!
+  .about__description--bottom
+    p I’m currently spending some time learning the javascript framework React, my goal is to be able to build a application that can also work as a mobile app (probably using React native) and being able to understand databases (probably using mongodb or some serverless service).
+
+    p I’m open to learn a language or tools based on the needs of the company.

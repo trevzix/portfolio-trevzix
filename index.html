@@ -12,33 +12,37 @@
   <body>
     <script src="script.js" defer></script>
     <div class="container">
-      <nav>
-        <div class="links">
-          <div class="links-left"><a class="logo link">trevzix</a><a class="link">About</a><a class="link">Projects</a><a class="link">Contact</a><a class="resume" href="#">Resume</a></div>
-          <div class="links-right"> <a class="link" id="modal-link">How to make a friend for life</a><a class="light-dark-toggle"> <i class="fas fa-sun"></i>Too dark?</a></div>
-        </div>
-      </nav>
+      <header>
+        <nav>
+          <div class="links"><a class="logo link">trevzix</a>
+            <div class="links__left"><a class="link">About</a><a class="link">Projects</a><a class="link">Contact</a><a class="resume" href="#">Resume</a></div>
+            <div class="links__right"><a class="light-dark-toggle"> <i class="fas fa-sun"></i>Too dark?</a><i class="fas fa-bars menu" id="menu"></i></div>
+          </div>
+        </nav>
+      </header>
       <main class="hero">
-        <div class="hi">
-          <h1> Hi,<br>I'm <span>Trevor,</span><br>Web developer.</h1>
-        </div>
         <div class="picture">
           <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
             <path fill="#c4c4c4" d="M44,-76.2C57.5,-68.4,69.1,-57.5,78.1,-44.3C87.1,-31.1,93.5,-15.5,94.2,0.4C94.9,16.4,90,32.7,81.4,46.6C72.7,60.5,60.5,72,46.3,79.5C32.1,87,16.1,90.6,0.7,89.4C-14.6,88.1,-29.3,82.1,-42.8,74.3C-56.4,66.4,-68.8,56.6,-76.7,43.9C-84.7,31.3,-88.1,15.6,-87.2,0.5C-86.4,-14.6,-81.2,-29.3,-74.1,-43.4C-67,-57.5,-57.9,-71.1,-45.3,-79.3C-32.6,-87.6,-16.3,-90.5,-0.5,-89.6C15.3,-88.7,30.5,-84,44,-76.2Z" transform="translate(100 100)"></path>
           </svg>
         </div>
+        <div class="hi">
+          <h1> Hi,<br>I'm <span>Trevor,</span><br>Web developer.</h1>
+        </div>
       </main>
       <section class="about" id="about">
         <h1 class="section-title">About</h1>
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque dicta odit non optio voluptates voluptate veniam quae nulla quibusdam minus.</p>
-        <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/PkZNo7MFNFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-        <div class="technologies">
-          <div class="titles">
+        <div class="about__description">
+          <p>I’m a developer currently living in southern California. </p>
+          <p>My curiosity and desire to express my creativity has led me to pursue programming, having the power to build tools to automate/improve my life has proven to be satisfying. </p>
+          <p>I want to understand how big projects are done and how teams of developers work together to build complex applications.</p>
+          <p>I prepared a quick video specially for you:</p>
+        </div>
+        <div class="about__video"><iframe class="about__video" width="373" height="210" src="https://www.youtube.com/embed/PkZNo7MFNFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="about__technologies">
+          <div class="about__technologies--familiar">
             <h3>Familiar with: </h3>
-            <h3>Strongly interested in learning:</h3>
-          </div>
-          <div class="lists">
-            <ul class="familiar">
+            <ul>
               <li>HTML/PUG</li>
               <li>CSS/SASS</li>
               <li>Javascript</li>
@@ -47,83 +51,72 @@
               <li>Docker</li>
               <li>Linux CLI</li>
             </ul>
-            <ul class="learning"> 
-              <li>React/React Native</li>
-              <li>Databases (MongoDB, SQL...)</li>
+          </div>
+          <div class="about__technologies--familiar"> 
+            <h3>Strongly interested in learning:</h3>
+            <ul>
+              <li>React</li>
+              <li>React Native</li>
+              <li>Databases</li>
               <li>Serverless (Firebase, Azure...)</li>
             </ul>
           </div>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio reprehenderit necessitatibus quis voluptatibus dolores. Vel nemo illum, dolores reprehenderit amet alias, voluptate sapiente velit, nihil enim id? Corporis, soluta sunt!</p>
+        <div class="about__description--bottom">
+          <p>I’m currently spending some time learning the javascript framework React, my goal is to be able to build a application that can also work as a mobile app (probably using React native) and being able to understand databases (probably using mongodb or some serverless service).</p>
+          <p>I’m open to learn a language or tools based on the needs of the company.</p>
+        </div>
       </section>
       <section class="projects" id="projects">
         <h1 class="section-title">Projects</h1>
         <div class="project">
-          <div class="projects-separator-left">
+          <div class="project__separator-left">
             <h2> NMPG - No Mouse Password Generator</h2>
-            <div class="line"></div>
+            <div class="project__separator-left--line"></div>
           </div>
-          <div class="projects-description"> 
-            <div class="image"><img src='https://dummyimage.com/400x300.gif' alt=''/></div>
-            <div class="description">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, aliquam architecto a dolore optio omnis est quaerat assumenda culpa blanditiis aspernatur hic aut qui maiores dolorum corporis illum mollitia excepturi.</p>
+          <div class="project__wrapper-image-description-left"> 
+            <div class="project__image"><img src='images/screen-nmpg-no_mouse_password_generator.png' alt=''/></div>
+            <div class="project__description">
+              <p>I created a password generator designed to be used without having  to take your hands out of the keyboard, to achieve that you have to input a custom syntax that is going to tell the program what are the characterististics of the desired password.</p>
+              <p>What I learn by doing that project:</p>
               <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
+                <li>String and array manipulation</li>
+                <li>How to retrieve values from objects</li>
+                <li>How to assign keyboard shortcuts using event listeners.</li>
               </ul>
-              <div class="projects-links"><a><i class="fas fa-external-link-alt"></i></a><a><i class="fab fa-github"></i> </a></div>
+              <div class="project__links"><a href="https://www.nomousepassword.com/"><i class="fas fa-external-link-alt"></i></a><a><i class="fab fa-github"></i> </a></div>
             </div>
           </div>
         </div>
         <div class="project">
-          <div class="projects-separator-right">
-            <div class="line"></div>
+          <div class="project__separator-right">
             <h2> Street Fighter 2 Character Selection</h2>
+            <div class="project__separator-right--line"></div>
           </div>
-          <div class="projects-description"> 
-            <div class="description">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, aliquam architecto a dolore optio omnis est quaerat assumenda culpa blanditiis aspernatur hic aut qui maiores dolorum corporis illum mollitia excepturi.</p>
+          <div class="project__wrapper-image-description-right">
+            <div class="project__image"><a href="https://trevzix.com/sf2"> <img src="images/project-preview-street-fighter.png" alt="" srcset=""></a></div>
+            <div class="project__description">
+              <p>I created a clone of the character selection screen in the game street figher 2 turbo.</p>
+              <p> You can use the arrow keys or vim keys (hjkl) to move around the grid to select a player, everytime you move it also dynamically change the highlighted flag on the map to match the selected character. The behaviour is the same as the original game.</p>
+              <p>What I learn by doing that project:</p>
               <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
+                <li>How to position “trick” elements using absolute positioning.</li>
+                <li>How to dynamically change things on the DOM by using event listeners.</li>
+                <li>How to manipulate audio.</li>
               </ul>
-              <div class="projects-links"><a><i class="fas fa-external-link-alt"></i></a><a><i class="fab fa-github"></i> </a></div>
-            </div>
-            <div class="image"><img src='https://dummyimage.com/400x300.gif' alt=''/></div>
-          </div>
-        </div>
-        <div class="project">
-          <div class="projects-separator-left">
-            <h2> Super Customisable Weather app</h2>
-            <div class="line"></div>
-          </div>
-          <div class="projects-description"> 
-            <div class="image"><img src='https://dummyimage.com/400x300.gif' alt=''/></div>
-            <div class="description">
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, aliquam architecto a dolore optio omnis est quaerat assumenda culpa blanditiis aspernatur hic aut qui maiores dolorum corporis illum mollitia excepturi.</p>
-              <ul>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-                <li>Lorem ipsum dolor sit amet.</li>
-              </ul>
-              <div class="projects-links"><a><i class="fas fa-external-link-alt"></i></a><a><i class="fab fa-github"></i>                 </a></div>
+              <div class="project__links"><a><i class="fas fa-external-link-alt"></i></a><a><i class="fab fa-github"></i> </a></div>
             </div>
           </div>
         </div>
       </section>
       <section class="contact" id="contact">
         <h1 class="section-title">Contact</h1>
-        <div class="contact-description">
-          <div class="map">
+        <div class="contact__contact">
+          <div class="contact__map">
              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d547333.2797704533!2d-117.34268182876207!3d34.26695189754277!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80db53c64196b143%3A0x75d9e9ca3bdbba67!2sRedlands%2C%20CA!5e0!3m2!1sen!2sus!4v1617402392082!5m2!1sen!2sus" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
-          <div class="right">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores non quaerat perferendis officiis suscipit quidem nemo velit laudantium neque incidunt.</p>
-            <ul class="contact-links">
+          <div class="contact__info">
+            <p>Thanks for visiting my portfolio website, feel free to contact me using any of the options below, you can ask me any questions, I'm also open for criticism, if you have any advice I totally appreciate it.</p>
+            <ul class="contact__links">
               <li> <a href="mailto:trevzix@gmail.com">Email: trevzix@gmail.com</a></li>
               <li>Phone: +1 (661) 494-4642</li>
               <li>LinkedIn: trevnichols</li>
@@ -131,23 +124,9 @@
           </div>
         </div>
       </section>
-      <div class="bottom">
+      <footer class="bottom">
         <p>Made with &#128157; using pug, sass and vanilla js , hosted using aws amplify,  by <a href="mailto:trevzix@gmail.com">trevzix</a></p>
-      </div>
-      <div class="modal"><i class="fas fa-times"></i>
-        <div class="hey">  <span>&#127774;</span>
-          <p>Wow! I was not expecting you to click on that link! Thanks for you being curious.</p><span>&#127774;</span>
-        </div>
-        <div class="message">
-          <p>Like most people who likes computers and technology, I have no friends. &#128514;</p>
-          <p>I can figure out things on my own, I've doing it for my whole life, but would be nice to find someone more knowledgeble that can provide me guidance.</p>
-          <p>If you're that person and you're feeling charitable today, then you just gained a friend for life &#128588;</p>
-          <div class="message-video">
-            <p>I prepared a little video for you:</p><iframe width="560" height="315" src="https://www.youtube.com/embed/PkZNo7MFNFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          <p>Send me a email with a simply "hi" or anything you want</p><a href="mailto:trevzix@gmail.com">trevzix@gmail.com </a>
-        </div>
-      </div>
+      </footer>
     </div><a class="scroll-top" href="#"><i class="fas fa-long-arrow-alt-up"></i></a>
   </body>
 </html>

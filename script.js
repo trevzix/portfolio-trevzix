@@ -33,7 +33,7 @@ lightDarkToggle.addEventListener("click", (x) => {
 // 3. Nav links
 
 const links = document.querySelectorAll(".links");
-console.log(links);
+// console.log(links);
 
 links.forEach((link) => {
   link.addEventListener("click", (x) => {
@@ -74,19 +74,43 @@ scrollTop.addEventListener("click", () => {
 
 // 5. Modal popup
 
-// The link location on the navbar
-const modalLink = document.getElementById("modal-link");
+// // The link location on the navbar
+// const modalLink = document.getElementById("modal-link");
 
-// The popup itself
-const modalArea = document.querySelector(".modal");
+// // The popup itself
+// const modalArea = document.querySelector(".modal");
 
-// Close button inside of the popup
-const modalClose = document.querySelector(".fa-times");
+// // Close button inside of the popup
+// const modalClose = document.querySelector(".fa-times");
 
-modalLink.addEventListener("click", () => {
-  modalArea.classList.add("modal-show");
-});
+// modalLink.addEventListener("click", () => {
+//   modalArea.classList.add("modal-show");
+// });
 
-modalClose.addEventListener("click", () => {
-  modalArea.classList.remove("modal-show");
+// modalClose.addEventListener("click", () => {
+//   modalArea.classList.remove("modal-show");
+// });
+
+// 5. Hamburger menu
+
+// const menu = document.querySelector(".menu");
+const menu = document.getElementById("menu");
+
+let timesOrBars = "bars";
+menu.addEventListener("click", (x) => {
+  const linksLeft = document.querySelector(".links__left");
+  linksLeft.classList.toggle("show");
+
+  if (timesOrBars === "bars") {
+    menu.classList.remove("fa-bars");
+    menu.classList.add("fa-times");
+    timesOrBars = "times";
+    return;
+  }
+  if (timesOrBars === "times") {
+    menu.classList.remove("fa-times");
+    menu.classList.add("fa-bars");
+    timesOrBars = "bars";
+    return;
+  }
 });
