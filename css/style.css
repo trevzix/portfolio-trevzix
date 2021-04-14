@@ -327,13 +327,14 @@ nav i {
   margin-bottom: 1rem;
 }
 .project__separator-left--line {
+  flex-grow: 2;
   content: "";
   width: 50%;
   height: 1px;
   position: relative;
   left: 0;
   bottom: 5px;
-  margin: 0 1rem;
+  margin-left: 0.5rem;
   background-color: #c4c4c4;
   display: none;
   opacity: 0.3;
@@ -349,13 +350,14 @@ nav i {
   }
 }
 .project__separator-right--line {
+  flex-grow: 2;
   content: "";
   width: 55%;
   height: 1px;
   position: relative;
   right: 0;
   bottom: 5px;
-  margin: 0 1rem;
+  margin-right: 0.5rem;
   background-color: #c4c4c4;
   display: none;
   opacity: 0.3;
@@ -471,21 +473,11 @@ nav i {
 .light-theme .section-title::after {
   background-color: #1a1a1a;
 }
-.light-theme a:nth-child(2):hover {
-  border-bottom: 1px solid #1a1a1a;
+.light-theme a:hover {
+  color: #1a1a1a;
 }
-.light-theme a:nth-child(3):hover {
-  border-bottom: 1px solid #1a1a1a;
-}
-.light-theme a:nth-child(4):hover {
-  border-bottom: 1px solid #1a1a1a;
-}
-.light-theme .resume {
-  border: 1px solid #1a1a1a;
-}
-.light-theme .resume:hover {
+.light-theme a:hover:after {
   background-color: #1a1a1a;
-  color: white;
 }
 .light-theme .light-dark-toggle:hover {
   border: 1px solid #1a1a1a;

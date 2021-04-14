@@ -11,31 +11,10 @@
     }
   }
 
-  // > navbar
-  // .logo {
-  //   &:hover {
-  //     background-color: c.$dark;
-  //     color: white;
-  //   }
-  // }
-
-  a {
-    @for $i from 2 through 4 {
-      &:nth-child(#{$i}) {
-        &:hover {
-          border-bottom: 1px solid c.$dark;
-        }
-      }
-    }
-  }
-
-  .resume {
-    border: 1px solid c.$dark;
-
-    &:hover {
+  a:hover {
+    color: c.$dark;
+    &:after {
       background-color: c.$dark;
-      color: white;
-      // color: c.$light;
     }
   }
 
@@ -44,7 +23,6 @@
       border: 1px solid c.$dark;
     }
   }
-
   // < navbar
 
   .project {
@@ -60,11 +38,6 @@
     }
   }
 
-  // .email-test {
-  //   a {
-  //     color: c.$dark;
-  //   }
-  // }
   .scroll-top {
     color: c.$dark;
   }
@@ -73,19 +46,12 @@
     color: c.$dark;
   }
 
-  // .bottom {
-  //   a {
-  //     color: c.$dark;
-  //   }
-  // }
-
   .modal {
     background-color: white;
     border: 1px solid c.$dark;
 
     .hey {
       background-color: c.$dark;
-      // background-color: red;
       color: c.$light;
     }
 

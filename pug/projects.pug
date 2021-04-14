@@ -8,35 +8,48 @@ section.projects#projects
 
     .project__wrapper-image-description-left 
       .project__image
-        //- <img src='https://dummyimage.com/400x300.gif' alt=''/>
-        <img src='images/screen-nmpg-no_mouse_password_generator.png' alt=''/>
+        a(href="https://www.nomousepassword.com/")
+          <img src='images/screen-nmpg-no_mouse_password_generator.png' alt=''/>
       .project__description
-        p I created a password generator designed to be used without having  to take your hands out of the keyboard, to achieve that you have to input a custom syntax that is going to tell the program what are the characterististics of the desired password.
+        //- p I created a password generator designed to be used without having  to take your hands out of the keyboard, to achieve that you have to input a custom syntax that is going to tell the program what are the characterististics of the desired password.
+
+        
+
+        p I don't like to use the mouse, I will do anything to avoid to take my hands out of the typing position. When comes to password generators there's always a button you have to click somewhere to generate what you want.
+
+        p So I created this app that allows me to generate passwords without having to click on anything, all I have to do is to input a simple syntax that is going to be interpreted by an algorithm and give a password as an output.
+
+        p I think the result was good, maybe once I learn enough react I can try to rewrite using the framework, I even got a domain for it, check it out, there's instructions on the website
 
         p What I learn by doing that project:
         ul
-          li String and array manipulation
-          li How to retrieve values from objects
+          li String and array manipulation.
+          li How to retrieve values from objects.
           li How to assign keyboard shortcuts using event listeners.
+          li CSS grid.
         .project__links
           a(href="https://www.nomousepassword.com/")
             <i class="fas fa-external-link-alt"></i>
-          a
+          a(href="https://github.com/trevzix/nomousepassword")
             <i class="fab fa-github"></i> 
 
   .project
     .project__separator-right
-      h2  Street Fighter 2 Character Selection
+      h2  Street Fighter 2 Character Selection Clone
       .project__separator-right--line
       
     .project__wrapper-image-description-right
       .project__image
-        a(href="https://trevzix.com/sf2") 
+        a(href="https://street-fighter-clone.trevzix.me/") 
           img(src="images/project-preview-street-fighter.png", alt="", srcset="")
       .project__description
-        p I created a clone of the character selection screen in the game street figher 2 turbo.
+        p I was practicing some algorithms at codewars and I stumble upon one "kata" where I had to simulate a game's selection grid.
 
-        p  You can use the arrow keys or vim keys (hjkl) to move around the grid to select a player, everytime you move it also dynamically change the highlighted flag on the map to match the selected character. The behaviour is the same as the original game.
+        p Then I thought, can I create a clone of the street fighter 2 selection screen by only using html, css and javascript?
+
+        p So that's what I did, I found sprites of the original game, cut everything into pieces using gimp, then positioned everything on their respective position with the magic powers of css.
+
+        p The behavior is the same as the original game. You can use the arrow keys or vim keys (hjkl) to move around the grid to select a player, every time you move it also dynamically change the highlighted flag on the map to match the selected character.
 
         p What I learn by doing that project:
         ul
@@ -44,9 +57,9 @@ section.projects#projects
           li How to dynamically change things on the DOM by using event listeners.
           li How to manipulate audio.
         .project__links
-          a
+          a(href="https://street-fighter-clone.trevzix.me/") 
             <i class="fas fa-external-link-alt"></i>
-          a
+          a(href="https://github.com/trevzix/sf2-selection")
             <i class="fab fa-github"></i> 
 
   //- .project
