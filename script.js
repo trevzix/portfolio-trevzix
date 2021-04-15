@@ -32,7 +32,7 @@ lightDarkToggle.addEventListener("click", (x) => {
 
 // 3. Nav links
 
-const links = document.querySelectorAll(".links");
+const links = document.querySelectorAll(".link");
 // console.log(links);
 
 links.forEach((link) => {
@@ -47,29 +47,6 @@ links.forEach((link) => {
       window.location.hash = "contact";
     }
   });
-});
-
-// 4. Scroll to top  button
-
-scrollTop = document.querySelector(".scroll-top");
-
-// When the user scrolls down 400px from the top of the document, show the button
-window.onscroll = () => {
-  if (
-    document.body.scrollTop > 300 ||
-    document.documentElement.scrollTop > 300
-  ) {
-    scrollTop.style.display = "block";
-  } else {
-    scrollTop.style.display = "none";
-  }
-};
-
-// When the user clicks on the button, scroll to the top of the document
-
-scrollTop.addEventListener("click", () => {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 });
 
 // 5. Modal popup
@@ -90,6 +67,8 @@ scrollTop.addEventListener("click", () => {
 // modalClose.addEventListener("click", () => {
 //   modalArea.classList.remove("modal-show");
 // });
+
+// =================================================
 
 // 5. Hamburger menu
 
@@ -113,4 +92,53 @@ menu.addEventListener("click", (x) => {
     timesOrBars = "bars";
     return;
   }
+});
+
+// =============================================
+
+// 6. Progress Bar - Scroll indicator
+
+function scrollProgress() {
+  var currentState =
+    document.body.scrollTop || document.documentElement.scrollTop;
+  // console.log(currentState);
+  var pageHeight =
+    document.documentElement.scrollHeight -
+    document.documentElement.clientHeight;
+  // console.log(pageHeight);
+  var scrollStatePercentage = (currentState / pageHeight) * 100;
+  // console.log(scrollStatePercentage);
+  document.querySelector(".page-scroll-indicator > .progress").style.width =
+    scrollStatePercentage + "%";
+}
+
+// window.onscroll = function () {
+//   scrollProgress();
+// };
+
+// =============================================
+
+// 4. Scroll to top  button
+
+scrollTop = document.querySelector(".scroll-top");
+
+// When the user scrolls down 400px from the top of the document, show the button
+window.onscroll = () => {
+  scrollProgress();
+
+  if (
+    document.body.scrollTop > 300 ||
+    document.documentElement.scrollTop > 300
+  ) {
+    scrollTop.style.display = "block";
+  } else {
+    scrollTop.style.display = "none";
+  }
+};
+
+// When the user clicks on the button, scroll to the top of the document
+
+scrollTop.addEventListener("click", () => {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 });

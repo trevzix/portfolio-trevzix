@@ -465,6 +465,21 @@ nav i {
   color: #c4c4c4;
 }
 
+.page-scroll-indicator {
+  position: fixed;
+  width: 100%;
+  height: 2px;
+  background-color: transparent;
+  top: 0;
+  z-index: 9999;
+}
+
+.progress {
+  width: 0%;
+  height: 2px;
+  background-color: #c4c4c4;
+}
+
 .light-theme {
   background-color: white;
   color: #1a1a1a;
@@ -505,6 +520,9 @@ nav i {
 }
 .light-theme .modal .message a {
   color: #1a1a1a;
+}
+.light-theme .progress {
+  background-color: #1a1a1a;
 }
 
 .modal {
