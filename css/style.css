@@ -126,6 +126,13 @@ a {
   color: #c4c4c4;
 }
 
+#app {
+  font-size: 70px;
+  line-height: 78px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+}
+
 header {
   margin-bottom: 2rem;
 }
@@ -261,14 +268,11 @@ nav i {
     flex-direction: row-reverse;
   }
 }
-.hero h1 {
-  font-size: 3.5rem;
-}
 .hero .hi {
   margin-bottom: 1rem;
 }
 .hero .hi h1 {
-  font-size: 3rem;
+  font-size: 4rem;
 }
 .hero .picture svg {
   width: 300px;

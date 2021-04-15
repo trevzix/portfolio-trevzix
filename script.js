@@ -142,3 +142,33 @@ scrollTop.addEventListener("click", () => {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 });
+
+///============================
+
+var typewriterText = document.getElementById("typewriter-text");
+
+var typewriter = new Typewriter(typewriterText, {
+  loop: true,
+  delay: 75,
+});
+
+typewriter
+  // .pauseFor(2500)
+  .typeString("Web Developer")
+  .pauseFor(3000)
+  // .deleteAll()
+  .deleteChars(9)
+  .typeString("Designer")
+  .pauseFor(1000)
+  // .deleteChars(13)
+  .deleteAll()
+  .typeString("Front-End Developer")
+  .pauseFor(3000)
+  // .deleteChars(20)
+  .deleteAll()
+  // .typeString(
+  //   '<span style="font-size: 3rem;">Professional curious person</span>'
+  // )
+  // .pauseFor(2000)
+
+  .start();
