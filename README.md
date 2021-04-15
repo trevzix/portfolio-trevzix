@@ -12,3 +12,4 @@ This is the source code of my portfolio landing page
 
 # Preview
 
+![Preview-landing-page](https://i.imgur.com/rb979mP.png)
