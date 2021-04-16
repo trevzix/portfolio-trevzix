@@ -2,7 +2,6 @@
 // 2. Light / Dark theme button toggler
 // 3. Nav links
 // 4. Scroll to top  button
-// 5. Modal popup
 
 // =====================================
 
@@ -172,3 +171,12 @@ typewriter
   // .pauseFor(2000)
 
   .start();
+
+///============================
+
+particlesJS;
+
+/* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
+particlesJS.load("particles-js", "particles.json", function () {
+  console.log("callback - particles.js config loaded");
+});
