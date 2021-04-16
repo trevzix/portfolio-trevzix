@@ -91,6 +91,7 @@
     text-align: center;
     img {
       width: 350px;
+      @include mixins.boxShadow;
     }
   }
 

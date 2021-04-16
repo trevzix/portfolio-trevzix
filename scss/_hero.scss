@@ -20,8 +20,10 @@
   }
 
   .picture {
-    svg {
-      width: 300px;
+    img {
+      border-radius: 63% 88% 68% 87% / 82% 84% 69% 71%;
+      width: 350px;
+      @include mixins.boxShadow;
     }
   }
 }

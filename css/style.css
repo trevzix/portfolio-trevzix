@@ -274,8 +274,11 @@ nav i {
 .hero .hi h1 {
   font-size: 4rem;
 }
-.hero .picture svg {
-  width: 300px;
+.hero .picture img {
+  border-radius: 63% 88% 68% 87%/82% 84% 69% 71%;
+  width: 350px;
+  box-shadow: 0px 12px 24px -12px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 12px 24px -12px rgba(0, 0, 0, 0.5);
 }
 
 .about {
@@ -296,6 +299,8 @@ nav i {
   margin: 0 auto;
   position: relative;
   margin-bottom: 2rem;
+  box-shadow: 0px 12px 24px -12px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 12px 24px -12px rgba(0, 0, 0, 0.5);
 }
 @media only screen and (min-width: 900px) {
   .about__video {
@@ -402,6 +407,8 @@ nav i {
 }
 .project__image img {
   width: 350px;
+  box-shadow: 0px 12px 24px -12px rgba(0, 0, 0, 0.5);
+  -webkit-box-shadow: 0px 12px 24px -12px rgba(0, 0, 0, 0.5);
 }
 .project__description {
   margin-top: 1rem;
@@ -510,6 +517,7 @@ nav i {
 }
 .light-theme .scroll-top {
   color: #1a1a1a;
+  opacity: 0.7;
 }
 .light-theme a {
   color: #1a1a1a;

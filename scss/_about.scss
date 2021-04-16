@@ -26,6 +26,7 @@
     margin: 0 auto;
     position: relative;
     margin-bottom: 2rem;
+    @include mixins.boxShadow;
     @include mixins.mq(900px) {
       width: 560px;
       height: 315px;
