@@ -40,7 +40,9 @@ links.forEach((link) => {
       window.location.hash = "about";
     }
     if (link.innerHTML == "Projects") {
-      window.location.hash = "projects";
+      // window.location.hash = "projects";
+      // document.getElementById("projects").scrollIntoView();
+      window.scrollTo(0, 1550);
     }
     if (link.innerHTML == "Contact") {
       window.location.hash = "contact";
@@ -98,9 +100,10 @@ menu.addEventListener("click", (x) => {
 // 6. Progress Bar - Scroll indicator
 
 function scrollProgress() {
+  // console.log(document.body.scrollTop);
   var currentState =
     document.body.scrollTop || document.documentElement.scrollTop;
-  // console.log(currentState);
+  console.log(currentState);
   var pageHeight =
     document.documentElement.scrollHeight -
     document.documentElement.clientHeight;
@@ -154,17 +157,19 @@ var typewriter = new Typewriter(typewriterText, {
 typewriter
   // .pauseFor(2500)
   .typeString("Web Developer")
-  .pauseFor(3000)
+  .pauseFor(1000)
   // .deleteAll()
   .deleteChars(9)
   .typeString("Designer")
-  .pauseFor(1000)
+  .pauseFor(600)
   // .deleteChars(13)
   .deleteAll()
   .typeString("Front-End Developer")
-  .pauseFor(3000)
+  .pauseFor(1000)
   // .deleteChars(20)
   .deleteAll()
+  .typeString("Programmer")
+  .pauseFor(1000)
   // .typeString(
   //   '<span style="font-size: 3rem;">Professional curious person</span>'
   // )
@@ -180,3 +185,8 @@ particlesJS;
 particlesJS.load("particles-js", "particles.json", function () {
   console.log("callback - particles.js config loaded");
 });
+
+///============================
+
+// Animate on Scroll
+AOS.init();

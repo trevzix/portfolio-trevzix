@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Trevzix | Trevor Nichols</title>
   </head>
@@ -16,22 +17,22 @@
     </div>
     <div class="container">
       <header>
-        <nav>
+        <nav data-aos="fade-down">
           <div class="links"><a class="logo">trevzix</a>
             <div class="links__left"><a class="link">About</a><a class="link">Projects</a><a class="link">Contact</a><a class="resume" href="resume-trevor-nichols.pdf">Resume</a></div>
             <div class="links__right"><a class="light-dark-toggle"> <i class="fas fa-sun"></i>Too dark?</a><i class="fas fa-bars menu" id="menu"></i></div>
           </div>
         </nav>
       </header>
-      <main class="hero">
-        <div class="picture"><img src="images/man_smiling.jpg" alt="" srcset=""></div>
-        <div class="hi">
+      <main class="hero" data-aos="zoom-in" data-aos-easing="ease-in-out" data-aos-mirror="true">
+        <div class="picture" data-aos="zoom-in-left" data-aos-easing="linear"><img src="images/man_smiling.jpg" alt="" srcset=""></div>
+        <div class="hi" data-aos="zoom-in-right" data-aos-easing="linear">
           <h1> Hi,<br>I'm <span>Trevor,</span><br>
             <div id="typewriter-text"></div>
           </h1>
         </div>
       </main>
-      <section class="about" id="about">
+      <section class="about" id="about" data-aos="fade-up" data-aos-delay="1000" data-aos-easing="ease-in-out">
         <h1 class="section-title">About</h1>
         <div class="about__description">
           <p>I’m a developer currently living in southern California. </p>
@@ -39,8 +40,8 @@
           <p>I want to understand how big projects are done and how teams of developers work together to build complex applications.</p>
           <p>I prepared a quick video specially for you:</p>
         </div>
-        <div class="about__video"><iframe class="about__video" width="373" height="210" src="https://www.youtube.com/embed/PkZNo7MFNFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-        <div class="about__technologies">
+        <div class="about__video" data-aos="fade-up"><iframe class="about__video" width="373" height="210" src="https://www.youtube.com/embed/PkZNo7MFNFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        <div class="about__technologies" data-aos="fade-up">
           <div class="about__technologies--familiar">
             <h3>Familiar with: </h3>
             <ul>
@@ -63,19 +64,19 @@
             </ul>
           </div>
         </div>
-        <div class="about__description--bottom">
+        <div class="about__description--bottom" data-aos="fade-up">
           <p>I’m currently spending some time learning the javascript framework React, my goal is to be able to build a application that can also work as a mobile app (probably using React native) and being able to understand databases (probably using mongodb or some serverless service).</p>
           <p>I’m open to learn a language or tools based on the needs of the company.</p>
         </div>
       </section>
-      <section class="projects" id="projects">
+      <section class="projects" id="projects" data-aos="fade-up"> 
         <h1 class="section-title">Projects</h1>
-        <div class="project">
+        <div class="project" data-aos="fade-left">
           <div class="project__separator-left">
             <h2> NMPG - No Mouse Password Generator</h2>
             <div class="project__separator-left--line"></div>
           </div>
-          <div class="project__wrapper-image-description-left"> 
+          <div class="project__wrapper-image-description-left">
             <div class="project__image"><a href="https://www.nomousepassword.com/"><img src='images/screen-nmpg-no_mouse_password_generator.png' alt=''/></a></div>
             <div class="project__description">
               <p>I don't like to use the mouse, I will do anything to avoid to take my hands out of the typing position. When comes to password generators there's always a button you have to click somewhere to generate what you want.</p>
@@ -92,13 +93,13 @@
             </div>
           </div>
         </div>
-        <div class="project">
+        <div class="project" data-aos="fade-right">
           <div class="project__separator-right">
             <h2> Street Fighter 2 Character Selection Clone</h2>
             <div class="project__separator-right--line"></div>
           </div>
           <div class="project__wrapper-image-description-right">
-            <div class="project__image"><a href="https://street-fighter-clone.trevzix.me/"> <img src="images/project-preview-street-fighter.png" alt="" srcset=""></a></div>
+            <div class="project__image"><a href="https://street-fighter.trevzix.me/"> <img src="images/project-preview-street-fighter.png" alt="" srcset=""></a></div>
             <div class="project__description">
               <p>I was practicing some algorithms at codewars and I stumble upon one "kata" where I had to simulate a game's selection grid.</p>
               <p>Then I thought, can I create a clone of the street fighter 2 selection screen by only using html, css and javascript?</p>
@@ -116,7 +117,7 @@
           </div>
         </div>
       </section>
-      <section class="contact" id="contact">
+      <section class="contact" id="contact" data-aos="fade-up">
         <h1 class="section-title">Contact</h1>
         <div class="contact__contact">
           <div class="contact__map">
@@ -137,5 +138,6 @@
     </div><a class="scroll-top" href="#"><i class="fas fa-long-arrow-alt-up"></i></a><div id="particles-js"></div>
 <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   </body>
 </html>

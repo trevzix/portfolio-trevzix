@@ -1,12 +1,14 @@
-section.projects#projects
+//- section.projects#projects(data-aos="fade-up") 
+
+section.projects#projects(data-aos="fade-up") 
   h1.section-title Projects
 
-  .project
+  .project(data-aos="fade-left")
     .project__separator-left
       h2  NMPG - No Mouse Password Generator
       .project__separator-left--line
 
-    .project__wrapper-image-description-left 
+    .project__wrapper-image-description-left
       .project__image
         a(href="https://www.nomousepassword.com/")
           <img src='images/screen-nmpg-no_mouse_password_generator.png' alt=''/>
@@ -33,14 +35,14 @@ section.projects#projects
           a(href="https://github.com/trevzix/nomousepassword")
             <i class="fab fa-github"></i> 
 
-  .project
+  .project(data-aos="fade-right")
     .project__separator-right
       h2  Street Fighter 2 Character Selection Clone
       .project__separator-right--line
       
     .project__wrapper-image-description-right
       .project__image
-        a(href="https://street-fighter-clone.trevzix.me/") 
+        a(href="https://street-fighter.trevzix.me/") 
           img(src="images/project-preview-street-fighter.png", alt="", srcset="")
       .project__description
         p I was practicing some algorithms at codewars and I stumble upon one "kata" where I had to simulate a game's selection grid.
