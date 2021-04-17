@@ -158,3 +158,10 @@ a {
 // height: 100%;
 // position: fixed;
 // }
+
+li,
+p {
+  @include mixins.mq(900px) {
+    font-size: 1.1rem;
+  }
+}

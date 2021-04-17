@@ -146,6 +146,13 @@ a {
   z-index: -1;
 }
 
+@media only screen and (min-width: 900px) {
+  li,
+p {
+    font-size: 1.1rem;
+  }
+}
+
 header {
   margin-bottom: 2rem;
 }
@@ -164,6 +171,9 @@ nav i {
   .links {
     position: relative;
     justify-content: flex-start;
+  }
+  .links a {
+    font-size: 1.1rem;
   }
 }
 .links__right {
@@ -321,14 +331,16 @@ nav i {
   margin-bottom: 1rem;
 }
 .about__video {
-  margin: 0 auto;
-  position: relative;
   margin-bottom: 2rem;
+  display: grid;
+  place-items: center;
+}
+.about__video iframe {
   box-shadow: 0px 12px 24px -12px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0px 12px 24px -12px rgba(0, 0, 0, 0.5);
 }
 @media only screen and (min-width: 900px) {
-  .about__video {
+  .about__video iframe {
     width: 560px;
     height: 315px;
   }

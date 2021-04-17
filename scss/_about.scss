@@ -23,13 +23,24 @@
   }
 
   &__video {
-    margin: 0 auto;
-    position: relative;
+    // margin: 0 auto;
+    // position: relative;
     margin-bottom: 2rem;
-    @include mixins.boxShadow;
-    @include mixins.mq(900px) {
-      width: 560px;
-      height: 315px;
+    display: grid;
+    place-items: center;
+    // width: 700;
+    iframe {
+      @include mixins.boxShadow;
+      // width: 800;
+      // transform: scale(0.5);
+
+      // @include mixins.mq
+
+      @include mixins.mq(900px) {
+        // width: 700px;
+        width: 560px;
+        height: 315px;
+      }
     }
   }
 

@@ -5,6 +5,12 @@ header {
   margin-bottom: 2rem;
 }
 nav {
+  // position: fixed;
+  // width: 50%;
+  // height: 30px;
+  // top: 2px;
+  // z-index: 9999;
+  // background-color: c.$dark;
   a,
   i {
     cursor: pointer;
@@ -18,6 +24,10 @@ nav {
   @include mixins.mq(900px) {
     position: relative;
     justify-content: flex-start;
+
+    a {
+      font-size: 1.1rem;
+    }
   }
 
   &__right {
